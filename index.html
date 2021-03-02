@@ -33,7 +33,16 @@
           </ul>
           <h4>Colors Available</h4>
           <div v-for="variant in variants" :key="variant.variantId">
-            <p>{{variant.variantColor}}</p>
+            <p @mouseover="updateProduct(variant.variantImage)">
+              {{variant.variantColor}}
+            </p>
+          </div>
+          <button v-on:click="addToCart">Add to Cart</button>
+          <div class="cart">
+            <p>Cart ({{cart}})</p>
+            <button v-if="cart > 0" @click="deleteFromCart">
+              Remove from Cart
+            </button>
           </div>
         </div>
       </div>
