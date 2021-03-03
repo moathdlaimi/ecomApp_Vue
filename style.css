@@ -34,8 +34,8 @@ img {
 }
 
 .color-box {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-top: 5px;
 }
 
@@ -86,4 +86,8 @@ textarea {
 .activeTab {
   color: #16c0b0;
   text-decoration: underline;
+}
+
+.lineThrough {
+  text-decoration: line-through;
 }
